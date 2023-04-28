@@ -61,8 +61,8 @@ Prices between biddingToken and auctioningToken are expressed by a fraction whos
 Install dependencies
 
 ```
-git clone https://github.com/gnosis/ido-contracts
-cd ido-contracts
+git clone https://github.com/Gnosis-Auction/auction-contracts.git
+cd auction-contracts
 yarn
 yarn build
 ```
@@ -134,8 +134,6 @@ export INFURA_KEY=<Your infura key>
 export PK=<Your private key _for the signing address_. The address for this key should not hold any ETH>
 yarn hardhat generateSignatures --auction-id "Your auctionId" --file-with-address "./your_address_inputs.txt" --network $NETWORK
 ```
-
-The generated signatures can be directly uploaded to the backend by adding the flag `--post-to-api` - or `--post-to-dev-api` in case you are testing with [development environment](https://ido-ux.dev.gnosisdev.com/#/) - to the previous command. Uploading signatures allows all authorized users to create orders from the web interface without the extra friction of managing a signature.
 
 ## Audit
 
