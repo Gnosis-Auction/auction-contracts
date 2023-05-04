@@ -124,7 +124,7 @@ yarn hardhat clearAuction --auction-id <Your auction ID> --network $NETWORK
 
 Signatures for an auction with participation restriction can be created like that:
 
-1. Create a file: `your_address_inputs.txt` with comma separated addresses that should be allow-listed for the auction
+1. Create a file: `addresses.txt` with comma separated addresses that should be allow-listed for the auction at the root of the folder
 2. Initiate the auction and remember your auctionId
 3. Run the following script:
 
@@ -132,8 +132,11 @@ Signatures for an auction with participation restriction can be created like tha
 export NETWORK=<Your Network>
 export INFURA_KEY=<Your infura key>
 export PK=<Your private key _for the signing address_. The address for this key should not hold any ETH>
+export PINATA_JWT=<Your Pinata Key for saving the signatures>
 yarn hardhat generateSignatures --auction-id "Your auctionId" --file-with-address "./your_address_inputs.txt" --network $NETWORK
 ```
+
+The generated signatures will be uploaded to your pinata account. Currently in order to access these signatures, a Front End instance needs to be hosted with the same pinata key in order to access them on the auction site. We are currently looking for other decentralised storage options to avoid this step.
 
 ## Audit
 

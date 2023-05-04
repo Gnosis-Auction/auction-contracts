@@ -19,15 +19,12 @@
   },
   "dependencies": {
     "@gnosis.pm/solidity-data-structures": "^1.3.4",
-    "@lit-protocol/lit-node-client": "^2.1.38",
-    "@lit-protocol/sdk-nodejs": "^1.1.246",
     "@types/yargs": "^15.0.10",
     "argv": "^0.0.2",
     "axios": "^0.21.1",
     "bn.js": "^5.1.1",
     "dotenv": "^8.2.0",
     "ethers": "^5.0.22",
-    "siwe": "^1.1.6",
     "solc": "0.6.8",
     "yargs": "^16.1.1"
   },
