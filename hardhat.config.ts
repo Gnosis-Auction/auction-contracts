@@ -151,6 +151,13 @@ export default {
           )
         : "auto",
     },
+    binancesmartchaintestnet: {
+      ...sharedNetworkConfig,
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+      gasPrice: GAS_PRICE_GWEI
+        ? utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString()
+        : "auto",
+    },
     fuji: {
       ...sharedNetworkConfig,
       chainId: 43113,
