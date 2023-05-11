@@ -174,6 +174,11 @@ The generated signatures will be uploaded to your pinata account. Currently in o
   * DepositAndPlaceOrder: 0x4bAbb4b89ed7180aeF95F872f621afEE724F0344
   * AllowListOffChainManaged: 0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53
 
+* Binance Smart Chain Testnet:
+  * EasyAuction: 0x231F3Fd7c3E3C9a2c8A03B72132c31241DF0a26C
+  * DepositAndPlaceOrder: 0x14082EDeFCa073578d2C16E8fB42967bEc188E59
+  * AllowListOffChainManaged: 0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53
+
 * Fuji:
   * EasyAuction: 0xa5cd8D8effACB7Ad861e3797404924199D1463a5
   * DepositAndPlaceOrder: 0x39cbA0cC28EE67EAa8134C0e80a061c13EBC3603
