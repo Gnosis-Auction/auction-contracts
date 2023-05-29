@@ -87,6 +87,10 @@ export async function getWETH9Address(
     weth9Address = "0x60d4db9b534ef9260a88b0bed6c486fe13e604fc";
   } else if (chainId == 80001) {
     weth9Address = "0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa";
+  } else if (chainId == 11155111) {
+    weth9Address = "0xD0dF82dE051244f04BfF3A8bB1f62E1cD39eED92";
+  } else if (chainId == 42161) {
+    weth9Address = "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
   }
   return weth9Address;
 }
