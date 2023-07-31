@@ -1,4 +1,4 @@
-import "@nomiclabs/hardhat-etherscan";
+import "@nomicfoundation/hardhat-verify";
 import "@nomiclabs/hardhat-waffle";
 import "hardhat-deploy";
 import dotenv from "dotenv";
@@ -216,5 +216,15 @@ export default {
   },
   etherscan: {
     apiKey: MY_ETHERSCAN_API_KEY,
+    customChains: [
+      {
+        network: "sepolia",
+        chainId: 11155111,
+        urls: {
+          apiURL: "https://api-sepolia.etherscan.io/api",
+          browserURL: "https://sepolia.etherscan.io",
+        },
+      },
+    ],
   },
 };
